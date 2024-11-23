@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Understanding CSS Position</title>
+        <link href="./Resources/style.css" rel="stylesheet">
+        <!--Roboto Slab Link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h1>Understanding CSS Position</h1>
+            <img src="./Resources/background.jpg" alt="computer science backdrop" class="background">
+        </header>
+        <div class="static">
+            <h2>Static</h2>
+            <p>This is the default position value in CSS. The element will be positioned in accordance with its normal flow
+                in the document. Top, bottom, left, and right will have no effect on the position of the element</p>
+            <img src="./Resources/absolute-example.png" alt="example of static positioning" class="example">
+        </div>
+        <div class="relative">
+            <h2>Relative</h2>
+            <p>The element is positioned according to the normal flow of the document, and then offset relative to itself.
+                The offset does not effect the position of any other elements.</p>
+            <img src="./Resources/relative-example.png" alt="example of relative positioning" class="example">
+        </div>
+        <div class="absolute">
+            <h2>Absolute</h2>
+            <p>The element is removed from the normal document flow, and no space is created for the element in the page layout. 
+                The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block.</p>
+            <img src="./Resources/absolute2-example.png" alt="example of absolute positioning" class="example">
+        </div>
+        <div class="sticky">
+            <h2>Sticky</h2>
+            <p>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling 
+                ancestor and containing block (nearest block-level ancestor), including table-related elements</p>
+            <img src="./Resources/stick-example.png" alt="example of sticky positioning" class="example">
+        </div>
+        
+        <footer>
+            <h3> Hello </h3>
+            <table>
+                <caption><strong>Quick summary of CSS styles</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Attribute</th>
+                        <th scope="col">Summary</th>
+                        <th scope="col">Z-Stack</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Static</th>
+                        <td>Default. Does not move.</td>
+                        <td>No effect</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Relative</th>
+                        <td>Positioned normally. Can be offset</td>
+                        <td>New stacking context</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Absolute</th>
+                        <td>Removed from document flow. Positioned relative to ancestor</td>
+                        <td>New stacking context. Margins do not collapse.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sticky</th>
+                        <td>Normal flow. Offset to nearest <em>scrolling</em> ancestor</td>
+                        <td>New stacking context.</td>
+                    </tr>
+                </thead>
+            </table>
+        </footer>
+    </body>
+</html>

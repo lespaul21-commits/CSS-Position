@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    font-family:"Roboto Slab", Verdana, Geneva, Tahoma, serif;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
+}
+
+header {
+    height: auto;
+    position: relative;
+    color: white;
+}
+
+h3 {
+    background-color: black
+}
+
+header .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: none;
+    z-index: 0;
+    top: 0;
+}
+
+.example {
+    position: relative;
+    left: 25%;
+}
+
+h2 {
+    padding: 5px;
+}
+
+.static h2 {
+    background-color: gray;
+    color: white;
+}
+
+.relative h2 {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.absolute h2 {
+    background-color: seagreen;
+    color: white;
+}
+
+.sticky h2 {
+    background-color:darksalmon;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+td, th {
+    padding: 5px;
+}
+
+table {
+    position: relative;
+    left: 15%;
+}
+
+
+
+
